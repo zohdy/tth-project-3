@@ -1,0 +1,202 @@
+body {
+    font-family: 'Merriweather', serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+h1, h2, p {
+    margin-top:0;
+    margin-bottom:0;
+}
+
+h2, legend {
+    color: #354152;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+/* HEADER STYLES */
+
+.main-heading {
+    background: #354152;
+    text-align: center;
+}
+
+.title {
+    padding-top:25px;
+    padding-bottom:25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.intro-text {
+    text-align: center;
+    margin-top: 30px;
+    color: #C8C8C8;
+    font-weight: 300;
+}
+
+.intro-text p {
+    margin-top: 15px;
+    line-height: 1.4;
+    font-size: .85em;
+}
+
+.double-border {
+    margin-top:35px;
+}
+
+.double-border > hr {
+   margin:3px;
+   border: 2px solid #354152;
+}
+
+.hr-thin {
+    border: 1px solid #354152 !important;
+}
+
+/* FORM STYLES */
+
+
+fieldset {
+    border: none;
+    padding-bottom: 20px;
+}
+
+.newsletter, .contact-info, .newsletter-format {
+    margin-top: 25px;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contact-info label {
+    font-size: .9em;
+    display: block;
+    color: rgba(53, 65, 82, .6);
+    margin-bottom: 10px;
+    margin-top:20px;
+    font-weight: 300;
+}
+
+
+.contact-info input, select, textarea {
+    background-color:#F5F5F5;
+    color: rgba(53, 65, 82, .6);
+    font-weight: 300;
+    padding:15px;
+    border:none;
+    display: block;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.contact-info select {
+     /* Replacing the dropdown arrow on the select field */
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     background: url('../img/scroll-vertical-arrows-16.png') #F5F5F5 no-repeat;
+     background-position-x: 98%;
+     background-position-y: 50%;
+     color: #C8C8C8;
+     font-size: .9em;
+}
+
+
+ .contact-info input::placeholder {
+     color: #C8C8C8;
+     font-size: .75em;
+     text-align:right;
+     font-style: italic;
+     text-transform: capitalize;
+ }
+
+ .contact-info input:focus {
+     border: 2px solid #4A6688;
+     color:#000;
+ }
+
+
+.contact-info input[id=zip-code]{
+    width: 50%;
+}
+
+/* NEWSLETTER */
+.newsletter p {
+    font-size: .9em;
+    color: rgba(53, 65, 82, .6);
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-top:10px;
+}
+
+.newsletter-format p {
+    color: rgba(53, 65, 82, .6);
+    font-weight: 300;
+    font-size: .9em;
+}
+
+.newsletter label, .newsletter-format label {
+    color: rgba(53, 65, 82, .6);
+    font-size: .9em;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.newsletter div, .newsletter-format div {
+    margin-top:15px;
+    margin-bottom: 5px;
+}
+
+.newsletter-format {
+    margin-top:0;
+    padding-top:0;
+}
+
+.extra-topics {
+    color: rgba(53, 65, 82, .6);
+    font-size: .9em;
+    font-weight: 300;
+}
+
+.extra-topics textarea {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+.btn {
+    font-weight: 600;
+    display: block;
+    font-size: 1.1em;
+    background: #41B8B0;
+    color: #fff;
+    padding:20px;
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+}
+
+footer {
+    color: #C8C8C8;
+    text-align: center;
+    margin-top:25px;
+    margin-bottom: 200px;
+    font-size: .9em;
+}
+
+
+
+
+
+
