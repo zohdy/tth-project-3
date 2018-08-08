@@ -1,3 +1,7 @@
+/******************** /
+    GLOBAL STYLES
+/*********************/
+
 body {
     font-family: 'Merriweather', serif;
     max-width: 1200px;
@@ -22,14 +26,18 @@ h2, legend {
     font-weight: 800;
 }
 
-/* HEADER STYLES */
-
-.main-heading {
-    background: #354152;
-    text-align: center;
+fieldset {
+    border: none;
+    padding-bottom: 20px;
 }
 
-.title {
+/******************** /
+       HEADER
+/*********************/
+
+.site-title {
+    background: #354152;
+    text-align: center;
     padding-top:25px;
     padding-bottom:25px;
     text-transform: uppercase;
@@ -37,39 +45,36 @@ h2, legend {
     font-size: 1.2em;
 }
 
-.intro-text {
+.form-header {
     text-align: center;
     margin-top: 30px;
-    color: #C8C8C8;
-    font-weight: 300;
 }
 
-.intro-text p {
+.form-header p {
     margin-top: 15px;
     line-height: 1.4;
     font-size: .85em;
+    font-weight: 300;
+    color: #C8C8C8;
 }
 
 .double-border {
     margin-top:35px;
 }
 
-.double-border > hr {
+.double-border hr {
    margin:3px;
-   border: 2px solid #354152;
+   border:2px solid #354152;
 }
 
 .hr-thin {
     border: 1px solid #354152 !important;
 }
 
-/* FORM STYLES */
-
-
-fieldset {
-    border: none;
-    padding-bottom: 20px;
-}
+/******************** /
+     FORM STYLES
+     Contact Info
+/*********************/
 
 .newsletter, .contact-info, .newsletter-format {
     margin-top: 25px;
@@ -86,7 +91,6 @@ fieldset {
     margin-top:20px;
     font-weight: 300;
 }
-
 
 .contact-info input, select, textarea {
     background-color:#F5F5F5;
@@ -108,8 +112,9 @@ fieldset {
      background: url('../img/scroll-vertical-arrows-16.png') #F5F5F5 no-repeat;
      background-position-x: 98%;
      background-position-y: 50%;
-     color: #C8C8C8;
-     font-size: .9em;
+
+    color: #C8C8C8;
+    font-size: .9em;
 }
 
 
@@ -132,7 +137,12 @@ fieldset {
     max-width: 160px;
 }
 
-/* NEWSLETTER */
+
+/******************** /
+     FORM STYLES
+      Newsletter
+/*********************/
+
 .newsletter p {
     font-size: .9em;
     color: rgba(53, 65, 82, .6);
@@ -141,27 +151,21 @@ fieldset {
     margin-top:10px;
 }
 
-.newsletter-format p {
-    color: rgba(53, 65, 82, .6);
-    font-weight: 300;
-    font-size: .9em;
-}
-
-.newsletter label, .newsletter-format label {
+.newsletter label {
     color: rgba(53, 65, 82, .6);
     font-size: .9em;
     font-weight: 300;
     margin-left: 10px;
 }
 
-.newsletter div, .newsletter-format div {
+.newsletter div {
     margin-top:15px;
     margin-bottom: 5px;
 }
 
 .newsletter-format {
-    margin-top:0;
-    padding-top:0;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 
 .extra-topics {
@@ -176,6 +180,10 @@ fieldset {
     height: 100px;
 }
 
+textarea:focus {
+    color:#000;
+}
+
 .btn {
     font-weight: 600;
     display: block;
@@ -186,6 +194,7 @@ fieldset {
     width: 100%;
     border-radius: 5px;
     border:none;
+    cursor: pointer;
 }
 
 footer {
@@ -196,29 +205,29 @@ footer {
     font-size: .9em;
 }
 
+
+
+/******************** /
+     MEDIA QUERIES
+/*********************/
 @media (min-width: 768px) {
 
     .contact-info label, .newsletter label, .newsletter-format label,
-    .newsletter p, .newsletter-format p {
+    .newsletter p, .newsletter-format p, .extra-topics {
         font-weight: 500;
         color: #5C6F8B;
         font-size: .9em;
     }
 
-    .extra-topics p {
-        font-weight: 500;
-        color: #5C6F8B;
-    }
-
-    .intro-text {
+    .form-header {
         margin-top: 65px;
     }
 
-    .intro-text h2 {
+    .form-header h2 {
         font-size: 1.5em;
     }
 
-    .intro-text p {
+    .form-header p {
         font-size: .9em;
     }
 
@@ -254,7 +263,7 @@ footer {
     }
 
     .newsletter-format {
-        margin-bottom: 10px;
+        padding-bottom: 0;
     }
 
     .extra-topics textarea {
