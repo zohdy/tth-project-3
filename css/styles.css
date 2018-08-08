@@ -129,6 +129,7 @@ fieldset {
 
 .contact-info input[id=zip-code]{
     width: 50%;
+    max-width: 160px;
 }
 
 /* NEWSLETTER */
@@ -193,6 +194,76 @@ footer {
     margin-top:25px;
     margin-bottom: 200px;
     font-size: .9em;
+}
+
+@media (min-width: 768px) {
+
+    .contact-info label, .newsletter label, .newsletter-format label,
+    .newsletter p, .newsletter-format p {
+        font-weight: 500;
+        color: #5C6F8B;
+        font-size: .9em;
+    }
+
+    .extra-topics p {
+        font-weight: 500;
+        color: #5C6F8B;
+    }
+
+    .intro-text {
+        margin-top: 65px;
+    }
+
+    .intro-text h2 {
+        font-size: 1.5em;
+    }
+
+    .intro-text p {
+        font-size: .9em;
+    }
+
+    .double-border {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .contact-info input, .contact-info label, .contact-info select{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .contact-info label {
+        width: calc(25% - 2px);
+    }
+
+    .contact-info input, .contact-info select {
+        width: calc(75% - 2px);
+    }
+
+    .contact-info legend {
+        margin-bottom: 20px;
+    }
+
+    .newsletter {
+        margin-top: 45px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter legend {
+        margin-bottom: 10px;
+    }
+
+    .newsletter-format {
+        margin-bottom: 10px;
+    }
+
+    .extra-topics textarea {
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-bottom: 320px;
+    }
 }
 
 
